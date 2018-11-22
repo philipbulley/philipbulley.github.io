@@ -7,6 +7,7 @@
 import React from 'react';
 import posed from 'react-pose';
 import Layout from './src/components/layout';
+import GlobalStyle from './src/shared/global-style';
 
 const LayoutPosed = posed(Layout)({
   enter: {},
@@ -19,10 +20,7 @@ export const replaceComponentRenderer = ({ props, ...other }) => {
 
   return (
     <div>
-      {/*<pre>*/}
-      {/*replaceComponentRenderer: {props.location.pathname}, pose:{' '}*/}
-      {/*{getPose(props.location.pathname)}*/}
-      {/*</pre>*/}
+      <GlobalStyle/>
       <LayoutPosed pose={props.location.pathname} {...props}>
         {React.createElement(component, props)}
       </LayoutPosed>

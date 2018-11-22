@@ -7,17 +7,17 @@ const Nav = ({ currentPath }) => (
   <Row>
     <Col md={3} mdOffset={1}>
       <NavItem pose={currentPath === '/projects' ? 'active' : 'inactive'}>
-        <Link to={'/projects'}>Projects</Link>
+        <Link to={'/projects'}>Projects.</Link>
       </NavItem>
     </Col>
     <Col md={3} mdOffset={1}>
       <NavItem pose={currentPath === '/about' ? 'active' : 'inactive'}>
-        <Link to={'/about'}>About</Link>
+        <Link to={'/about'}>About.</Link>
       </NavItem>
     </Col>
     <Col md={3} mdOffset={1}>
       <NavItem pose={currentPath === '/contact' ? 'active' : 'inactive'}>
-        <Link to={'/contact'}>Contact</Link>
+        <Link to={'/contact'}>Contact.</Link>
       </NavItem>
     </Col>
   </Row>

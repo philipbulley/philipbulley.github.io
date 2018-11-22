@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Grid } from 'react-styled-flexboxgrid';
 import Header from './header';
-import './layout.css';
 import Nav from './nav';
 import Bio from './bio';
 import { ThemeProvider } from 'styled-components';
