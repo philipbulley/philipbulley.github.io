@@ -6,8 +6,6 @@ import { Grid } from 'react-styled-flexboxgrid';
 import Header from './header';
 import Nav from './nav';
 import Bio from './bio';
-import { ThemeProvider } from 'styled-components';
-import theme from '../shared/theme';
 
 const Layout = ({ children, hostRef, location }) => (
   <StaticQuery
@@ -31,25 +29,15 @@ const Layout = ({ children, hostRef, location }) => (
         >
           <html lang="en" />
         </Helmet>
-        <ThemeProvider theme={theme}>
-          <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <Bio />
-            <Grid>
-              <Nav currentPath={location.pathname} />
-              <div
-                style={{
-                  margin: '0 auto',
-                  maxWidth: 960,
-                  padding: '0px 1.0875rem 1.45rem',
-                  paddingTop: 0,
-                }}
-              >
-                {children}
-              </div>
-            </Grid>
-          </>
-        </ThemeProvider>
+
+        <>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <Bio />
+          <Grid>
+            <Nav currentPath={location.pathname} />
+            {children}
+          </Grid>
+        </>
       </div>
     )}
   />

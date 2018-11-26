@@ -1,8 +1,8 @@
 import { createGlobalStyle, css } from 'styled-components';
 
 const custom = css`
-  body {
-    font-family: 'Avenir Next', sans-serif;
+  body, h1, h2, h3, h4, h5 {
+    font-family: ${({theme}) => theme.font.family};
   }
 `;
 
