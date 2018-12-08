@@ -1,6 +1,9 @@
 import React from 'react';
-import { Row, Col } from 'react-styled-flexboxgrid';
 import Project, { Date, Heading, Paragraph } from '../components/project';
+
+const Grid = ({children}) => <div>{children}</div>;
+const Col = Grid;
+const Row = Grid;
 
 const Projects = () => (
   <Row>

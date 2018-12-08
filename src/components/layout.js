@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import { Grid } from 'react-styled-flexboxgrid';
 import Header from './header';
 import Nav from './nav';
 import Bio from './bio';
-import GridGuides from './guides'
+import GridGuide from '../shared/grid/guide';
+import Grid from '../shared/grid/grid';
 
 const Layout = ({ children, hostRef, location }) => (
   <StaticQuery
@@ -34,11 +34,9 @@ const Layout = ({ children, hostRef, location }) => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
           <Bio />
-          <GridGuides />
-          <Grid fluid={false}>
-            <Nav currentPath={location.pathname} />
-            {children}
-          </Grid>
+          <GridGuide />
+          <Nav currentPath={location.pathname} />
+          {children}
         </>
       </div>
     )}

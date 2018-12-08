@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Col, Grid, Row } from 'react-styled-flexboxgrid'
 import '../shared/global-style';
+
+const Grid = ({children}) => <div>{children}</div>;
+const Col = Grid;
+const Row = Grid;
 
 const Bio = () => (
   <BioStyled>
