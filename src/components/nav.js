@@ -3,25 +3,28 @@ import { Link } from 'gatsby';
 import { Row, Col } from 'react-styled-flexboxgrid';
 import posed from 'react-pose';
 import styled from 'styled-components';
+import GridGuides from './guides';
 
 const Nav = ({ currentPath }) => (
-  <NavStyled>
-    <Col sm={3} smOffset={1}>
-      <NavItem pose={currentPath === '/projects' ? 'active' : 'inactive'}>
-        <Link to={'/projects'}>Projects.</Link>
-      </NavItem>
-    </Col>
-    <Col sm={3} smOffset={1}>
-      <NavItem pose={currentPath === '/about' ? 'active' : 'inactive'}>
-        <Link to={'/about'}>About.</Link>
-      </NavItem>
-    </Col>
-    <Col sm={3} smOffset={1}>
-      <NavItem pose={currentPath === '/contact' ? 'active' : 'inactive'}>
-        <Link to={'/contact'}>Contact.</Link>
-      </NavItem>
-    </Col>
-  </NavStyled>
+  <>
+    <NavStyled>
+      <Col sm={3} smOffset={1}>
+        <NavItem pose={currentPath === '/projects' ? 'active' : 'inactive'}>
+          <Link to={'/projects'}>Projects.</Link>
+        </NavItem>
+      </Col>
+      <Col sm={3}>
+        <NavItem pose={currentPath === '/about' ? 'active' : 'inactive'}>
+          <Link to={'/about'}>About.</Link>
+        </NavItem>
+      </Col>
+      <Col sm={3}>
+        <NavItem pose={currentPath === '/contact' ? 'active' : 'inactive'}>
+          <Link to={'/contact'}>Contact.</Link>
+        </NavItem>
+      </Col>
+    </NavStyled>
+  </>
 );
 
 export default Nav;
