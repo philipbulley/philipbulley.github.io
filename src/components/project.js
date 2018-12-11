@@ -4,13 +4,13 @@ const Project = styled.div`
   margin: 0 0 100px;
 
   a {
-    color: ${({ theme }) => theme.color.blue};
+    color: ${({ theme }) => theme.color.accent};
     font-weight: ${({ theme }) => theme.font.weightDemiBold};
     text-decoration: none;
 
     &:hover {
       color: ${({ theme }) => theme.color.white};
-      background: ${({ theme }) => theme.color.blue};
+      background: ${({ theme }) => theme.color.accent};
     }
   }
 `;

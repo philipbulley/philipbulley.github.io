@@ -16,5 +16,18 @@ const theme = {
     red: '#EE352E',
   },
 };
+theme.color.accent = theme.color.black;
 
+export const themeBlueAccent = {
+  ...theme,
+  color: { ...theme.color, accent: theme.color.blue },
+};
+export const themeYellowAccent = {
+  ...theme,
+  color: { ...theme.color, accent: theme.color.yellow },
+};
+export const themeRedAccent = {
+  ...theme,
+  color: { ...theme.color, accent: theme.color.red },
+};
 export default theme;

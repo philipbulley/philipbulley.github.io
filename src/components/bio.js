@@ -8,9 +8,9 @@ const Bio = () => (
   <BioStyled>
     <Grid>
       <BioText>
-        <strong>I'm Philip Bulley.</strong> A London-based freelance front-end
+        <strong>I'm Philip Bulley.</strong> An experienced London-based freelance front-end
         developer specialising in web application development. Loves
-        TypeScript/JavaScript & React.
+        TypeScript, JavaScript & React.
       </BioText>
     </Grid>
   </BioStyled>
@@ -20,7 +20,7 @@ export default Bio;
 
 const BioStyled = styled.div`
   padding: 50px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid ${({ theme }) => theme.color.accent};;
 `;
 
 const BioText = styled.div`

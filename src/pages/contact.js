@@ -27,7 +27,7 @@ const ContactText = styled.div`
   grid-column: 2 / span 10;
   color: ${({ theme }) => theme.color.two};
 
-  ${query.sm} {
+  ${query.md} {
     grid-column: 10 / span 3;
   }
 `;
@@ -35,6 +35,7 @@ const ContactText = styled.div`
 const Anchor = styled.a`
   display: block;
   font-weight: ${({ theme }) => theme.font.weightDemiBold};
+  color: ${({ theme }) => theme.color.accent};
   margin: 0 0 40px 0;
   text-decoration: none;
 
