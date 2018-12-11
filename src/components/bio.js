@@ -1,27 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import '../shared/global-style';
-
-const Grid = ({children}) => <div>{children}</div>;
-const Col = Grid;
-const Row = Grid;
+import Grid from '../shared/grid/grid';
+import query from '../shared/media';
 
 const Bio = () => (
   <BioStyled>
     <Grid>
-      <Row>
-        <Col>
-          {1 === 2 ? <>xA London-based freelance front-end developer specialising in web
-            application development. Loves TypeScript/JavaScript & React.</> : <>Lorem ipsum dolor sit amet</>}
-        </Col>
-      </Row>
+      <BioText>
+        <strong>I'm Philip Bulley.</strong> A London-based freelance front-end
+        developer specialising in web application development. Loves
+        TypeScript/JavaScript & React.
+      </BioText>
     </Grid>
   </BioStyled>
-)
+);
 
-export default Bio
+export default Bio;
 
 const BioStyled = styled.div`
   padding: 50px 0;
   border-bottom: 1px solid #000;
+`;
+
+const BioText = styled.div`
+  grid-column: 2 / span 10;
+  color: ${({ theme }) => theme.color.three};
+
+  ${query.sm} {
+    grid-column: 2 / span 9;
+  }
+
+  strong {
+    color: ${({ theme }) => theme.color.one};
+    font-weight: normal;
+  }
 `;

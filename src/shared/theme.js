@@ -14,7 +14,7 @@ const theme = {
     blue: '#2850AD',
     yellow: '#FCCC0A',
     red: '#EE352E',
-  }
+  },
 };
 
 export default theme;

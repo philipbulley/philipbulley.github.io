@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
 import styled from 'styled-components';
-import Grid from '../shared/grid/grid'
+import Grid from '../shared/grid/grid';
 
 const Nav = ({ currentPath }) => (
   <Grid>
@@ -34,17 +34,17 @@ const NavItem = styled(NavItemPosed)`
     text-decoration: none;
     color: ${({ theme }) => theme.color.one};
   }
-  
+
   grid-column-end: span 3;
-  
+
   &:nth-child(1) {
     grid-column-start: 2;
   }
-  
+
   &:nth-child(2) {
     grid-column-start: 6;
   }
-  
+
   &:nth-child(3) {
     grid-column-start: 10;
   }

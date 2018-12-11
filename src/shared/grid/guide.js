@@ -5,7 +5,7 @@ import Grid from './grid';
 class GridGuide extends PureComponent {
   state = {
     show: false,
-    fill: false
+    fill: false,
   };
 
   componentDidMount() {
