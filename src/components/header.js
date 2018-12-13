@@ -20,12 +20,14 @@ const HeaderStyled = styled.div`
   color: white;
   background-color: ${({ theme }) => theme.color.accent};
   font-weight: ${({ theme }) => theme.font.weightBold};
+
+  transition: background-color 0.1s ease-out 0.5s;
 `;
 
 const StyledLink = styled(Link)`
   grid-column: 2 / span 10;
   align-self: center;
   text-decoration: none;
-  color: ${({theme}) => theme.color.white};
+  color: ${({ theme }) => theme.color.white};
   font-size: 24px;
 `;

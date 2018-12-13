@@ -20,7 +20,8 @@ export default Bio;
 
 const BioStyled = styled.div`
   padding: 50px 0;
-  border-bottom: 1px solid ${({ theme }) => theme.color.accent};;
+  border-bottom: 1px solid ${({ theme }) => theme.color.accent};
+  transition: border-bottom .1s ease-out .5s;
 `;
 
 const BioText = styled.div`

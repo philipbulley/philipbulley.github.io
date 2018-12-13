@@ -6,7 +6,7 @@ import Header from './header';
 import Nav from './nav';
 import Bio from './bio';
 import GridGuide from '../shared/grid/guide';
-import Grid from '../shared/grid/grid';
+import Footer from './footer'
 
 const Layout = ({ children, hostRef, location }) => (
   <StaticQuery
@@ -37,6 +37,7 @@ const Layout = ({ children, hostRef, location }) => (
           <GridGuide />
           <Nav currentPath={location.pathname} />
           {children}
+          <Footer />
         </>
       </div>
     )}
