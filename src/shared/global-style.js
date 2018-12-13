@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
+import './fonts.css';
 
 const custom = css`
   body,
@@ -11,33 +12,6 @@ const custom = css`
   }
 `;
 
-const fonts = css`
-  @font-face {
-    font-family: 'Avenir Next';
-    font-style: normal;
-    font-weight: normal;
-    src: url(./fonts/avenir-next/regular.woff) format('woff'),
-      url(./fonts/avenir-next/regular.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Avenir Next';
-    font-style: normal;
-    font-weight: 600;
-    src: url('./fonts/avenir-next/demi.woff2') format('woff2'),
-      url(./fonts/avenir-next/demi.woff) format('woff'),
-      url(./fonts/avenir-next/demi.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Avenir Next';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./fonts/avenir-next/bold.woff2') format('woff2'),
-      url(./fonts/avenir-next/bold.woff) format('woff'),
-      url(./fonts/avenir-next/bold.ttf) format('truetype');
-  }
-`;
 
 const cssReset = css`
   html {
@@ -667,8 +641,6 @@ const cssReset = css`
 `;
 
 const GlobalStyle = createGlobalStyle`
-  ${fonts};
-  
   ${cssReset};
   
   ${custom};
