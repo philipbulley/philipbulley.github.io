@@ -37,7 +37,7 @@ const About = () => (
 export default About;
 
 const SubHeading = styled.h2`
-  grid-column: 2 / span 10;
+  grid-column: span 12;
   font-size: 24px;
   margin: 0 0 5px 0;
 
@@ -51,11 +51,11 @@ const SubHeading = styled.h2`
 `;
 
 const AboutText = styled.div`
-  grid-column: 2 / span 10;
+  grid-column: span 12;
   color: ${({ theme }) => theme.color.two};
 
   ${query.sm} {
-    grid-column: 6 / span 4;
+    grid-column: 6 / span 5;
   }
 
   strong {

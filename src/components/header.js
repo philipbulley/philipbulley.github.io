@@ -25,7 +25,7 @@ const HeaderStyled = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  grid-column: 2 / span 10;
+  grid-column: span 12;
   align-self: center;
   text-decoration: none;
   color: ${({ theme }) => theme.color.white};

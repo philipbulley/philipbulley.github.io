@@ -7,6 +7,8 @@ const Grid = styled.div`
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
     height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
     ${debug &&
       css`
         background-color: #ff880066;
@@ -14,7 +16,7 @@ const Grid = styled.div`
 
     ${query.sm} {
       width: ${breakpoint.sm}px;
-      margin: 0 auto;
+      padding: 0 50px;
       ${debug &&
         css`
           background-color: #ff00cc66;
@@ -23,7 +25,7 @@ const Grid = styled.div`
 
     ${query.md} {
       width: ${breakpoint.md}px;
-      margin: 0 auto;
+      padding: 0 120px;
       ${debug &&
         css`
           background-color: #9acd3266;
@@ -32,7 +34,6 @@ const Grid = styled.div`
 
     ${query.lg} {
       width: ${breakpoint.lg}px;
-      margin: 0 auto;
       ${debug &&
         css`
           background-color: #00bfff66;

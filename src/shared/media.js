@@ -4,10 +4,20 @@ export const breakpoint = {
   lg: 1200,
 };
 
+export const minWidth = Object.keys(breakpoint).reduce(
+  (acc, key) => ({
+    ...acc,
+    [key]: `(min-width: ${breakpoint[key]}px)`,
+  }),
+  {}
+);
+
+export const matches = minWidth => window.matchMedia(minWidth).matches;
+
 const query = Object.keys(breakpoint).reduce(
   (acc, key) => ({
     ...acc,
-    [key]: `@media (min-width: ${breakpoint[key]}px)`,
+    [key]: `@media ${minWidth[key]}`,
   }),
   {}
 );

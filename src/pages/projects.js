@@ -11,27 +11,40 @@ import query from '../shared/media';
 const Projects = () => (
   <Grid>
     <Project>
-      <Date>June 2017 - 1 year 5 months+</Date>
+      <Date>June 2017 - 1 year 6 months+</Date>
       <Heading>Tier 1 Investment Bank — Research Web Apps</Heading>
       <Paragraph>
-        Based on-site, Fleet Street. Working within the Investment Research
-        division on the bank's headline research presentation site and related
-        apps.
+        A lead role at a Tier 1 investment bank (based on-site, Fleet Street),
+        working within the Investment Research division on their headline
+        research site. Working closely with teams in Singapore and New York to
+        create data-heavy apps using React, Redux and ag-Grid.
+      </Paragraph>
+      <Paragraph>
+        The creation of a domain specific language and development of a custom
+        expression to AST parser was a highlight. Additional responsibilities
+        included driving front-end strategy as well as providing mentorship and
+        guidance to fellow developers.
       </Paragraph>
       <ul>
         <li>Data-heavy apps</li>
-        <li>React / Redux / ag-Grid / AEM integration</li>
+        <li>React / Redux</li>
+        <li>ag-Grid</li>
+        <li>AEM integration</li>
         <li>
-          Via <a href="http://www.somoglobal.com">Somo</a>
+          Contract via <a href="http://www.somoglobal.com">Somo</a>
         </li>
       </ul>
     </Project>
 
     <Project>
       <Date>August 2016 - 10 months</Date>
-      <Heading>FX Trading Mobile App</Heading>
+      <Heading>Commerzbank — FX Trading Mobile App</Heading>
       <Paragraph>
-        Lead developer on a mobile FX trading app for a prominent German bank.
+        Lead developer on a mobile FX trading app for Commerzbank using
+        TypeScript, RxJS, Angular 4 and Redux. Additional responsibilities
+        include working directly with clients to specify technical solutions;
+        providing mentorship and guidance to fellow developers as necessary;
+        development of cross-project in-house tooling. Basis: Contract.
       </Paragraph>
       <ul>
         <li>Angular 4</li>
@@ -41,24 +54,23 @@ const Projects = () => (
         <li>Redux</li>
         <li>rxjs</li>
         <li>
-          Via <a href="http://www.fathomlondon.com">Fathom London</a>
+          Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
         </li>
       </ul>
     </Project>
 
     <Project>
       <Date>April 2017 - 5 months</Date>
-      <Heading>Regtech CRM Tool</Heading>
+      <Heading>Standard Chartered — Regtech CRM Tool</Heading>
       <Paragraph>
-        Senior developer on a custom CRM tool for a British multinational
-        banking and financial services company.
+        Senior developer on a custom CRM tool for Standard Chartered.
       </Paragraph>
       <ul>
         <li>Angular.js 1.5</li>
         <li>Node</li>
         <li>Parse DB</li>
         <li>
-          Via <a href="http://www.fathomlondon.com">Fathom London</a>
+          Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
         </li>
       </ul>
     </Project>
@@ -67,19 +79,24 @@ const Projects = () => (
       <Date>March 2014 - 1 year 9 months</Date>
       <Heading>Responsive.TV — Video platform SaaS</Heading>
       <Paragraph>
-        Co-founded, led creative technology and developed the front-end of a
-        unique video SaaS product with{' '}
+        Technical Lead and creative technologist on ResponsiveTV. An innovative
+        video publishing SaaS comprising interactive video player (vanilla
+        TypeScript) and publishing suite including an entirely custom Adobe
+        Premiere-like video editor app (Angular.js and d3).
+      </Paragraph>
+      <Paragraph>
+        A highlight was successfully pitchng to{' '}
         <a href="https://www.adweek.com/digital/bloombergs-new-publishing-platform-tinder-video-164340/">
           Bloomberg Media
         </a>{' '}
-        as our first client.
+        and writing US patent documentation.
       </Paragraph>
       <ul>
         <li>TypeScript (consumer front-end)</li>
         <li>Angular.js / d3 (custom CMS)</li>
         <li>Node</li>
         <li>
-          Created with <a href="https://www.stinkstudios.com">StinkStudios</a>
+          Contract via <a href="https://www.stinkstudios.com">StinkStudios</a>
         </li>
       </ul>
     </Project>
@@ -125,9 +142,9 @@ const Projects = () => (
 export default Projects;
 
 const Project = styled(ProjectComponent)`
-  grid-column: 2 / span 10;
+  grid-column: span 12;
 
   ${query.sm} {
-    grid-column: 2 / span 8;
+    grid-column: span 9;
   }
 `;

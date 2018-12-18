@@ -24,7 +24,8 @@ const Contact = () => (
 export default Contact;
 
 const ContactText = styled.div`
-  grid-column: 2 / span 10;
+  text-align: right;
+  grid-column: span 12;
   color: ${({ theme }) => theme.color.two};
 
   ${query.md} {

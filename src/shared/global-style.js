@@ -12,7 +12,6 @@ const custom = css`
   }
 `;
 
-
 const cssReset = css`
   html {
     font-family: sans-serif;

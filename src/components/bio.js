@@ -25,11 +25,11 @@ const BioStyled = styled.div`
 `;
 
 const BioText = styled.div`
-  grid-column: 2 / span 10;
+  grid-column: span 12;
   color: ${({ theme }) => theme.color.three};
 
   ${query.sm} {
-    grid-column: 2 / span 9;
+    grid-column: 1 / span 9;
   }
 
   strong {
