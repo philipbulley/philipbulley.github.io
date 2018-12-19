@@ -2,9 +2,9 @@ import React from 'react';
 import { Link as LinkComponent } from 'gatsby';
 import posed from 'react-pose';
 import styled, { css } from 'styled-components';
-import GridComponent from '../shared/grid/grid';
+import _Grid from '../shared/grid/grid';
 import { easeOutExpo } from '../shared/easing';
-import query, {matches, minWidth} from '../shared/media';
+import query, { matches, minWidth } from '../shared/media';
 
 const Nav = ({ currentPath }) => (
   <Grid>
@@ -36,8 +36,8 @@ const getPose = (matchPath, currentPath) =>
 const navItemTransition = { ease: [0.19, 1.0, 0.22, 1.0], duration: 500 };
 const NavItemPosed = posed.div({
   active: {
-    y: () => matches(minWidth.sm) ? 50 : 0,
-    transition: navItemTransition
+    y: () => (matches(minWidth.sm) ? 50 : 0),
+    transition: navItemTransition,
   },
   inactive: { y: 0, transition: navItemTransition },
 });
@@ -46,42 +46,39 @@ const NavItem = styled(NavItemPosed)`
     display: inline-block;
     font-weight: ${theme.font.weightDemiBold};
     font-size: 20px;
-    grid-column: span 12;
 
     a {
       text-decoration: none;
       color: ${theme.color.one};
     }
 
-    grid-column-end: span 4;
-
     &:nth-child(1) {
-      grid-column-start: 1;
+      grid-column: 1 / span 4;
     }
 
     &:nth-child(2) {
       text-align: center;
-      grid-column-start: 5;
+      grid-column: 5 / span 4;
     }
 
     &:nth-child(3) {
       text-align: right;
-      grid-column-start: 9;
+      grid-column: 9 / span 4;
     }
 
     ${query.sm} {
       font-size: 24px;
       text-align: left;
-      
+
       grid-column-end: span 4;
 
       &:nth-child(2) {
         text-align: left;
-        grid-column-start: 6;
+        grid-column: 6 / span 3;
       }
 
       &:nth-child(3) {
-        grid-column-start: 10;
+        grid-column: 9 / span 4;
       }
     }
   `};
@@ -102,7 +99,7 @@ const Link = styled(LinkComponent)`
   display: inline-block;
 `;
 
-const Grid = styled(GridComponent)`
+const Grid = styled(_Grid)`
   margin-top: 70px;
   margin-bottom: 90px;
 

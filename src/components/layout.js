@@ -6,7 +6,7 @@ import Header from './header';
 import Nav from './nav';
 import Bio from './bio';
 import GridGuide from '../shared/grid/guide';
-import Footer from './footer'
+import Footer from './footer';
 
 const Layout = ({ children, hostRef, location }) => (
   <StaticQuery
