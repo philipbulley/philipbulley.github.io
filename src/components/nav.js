@@ -8,19 +8,19 @@ import query, { matches, minWidth } from '../shared/media';
 
 const Nav = ({ currentPath }) => (
   <Grid>
-    <NavItem pose={getPose('/projects/', currentPath)}>
+    <NavItem initialPose="init" pose={getPose('/projects/', currentPath)}>
       <Link to={'/projects/'}>
         Projects.
         <Underline />
       </Link>
     </NavItem>
-    <NavItem pose={getPose('/about/', currentPath)}>
+    <NavItem initialPose="init" pose={getPose('/about/', currentPath)}>
       <Link to={'/about/'}>
         About.
         <Underline />
       </Link>
     </NavItem>
-    <NavItem pose={getPose('/contact/', currentPath)}>
+    <NavItem initialPose="init" pose={getPose('/contact/', currentPath)}>
       <Link to={'/contact/'}>
         Contact.
         <Underline />
@@ -31,18 +31,33 @@ const Nav = ({ currentPath }) => (
 
 export default Nav;
 
+// const Container = posed.div({
+//   init: {},
+//   show: { staggerChildren: 500 },
+//   // inactive: { staggerChildren: 500 },
+// });
+
 const getPose = (matchPath, currentPath) =>
   currentPath.startsWith(matchPath) ? 'active' : 'inactive';
 const navItemTransition = { ease: [0.19, 1.0, 0.22, 1.0], duration: 500 };
 const NavItemPosed = posed.div({
+  init: {
+    y: 0,
+    opacity: 0,
+  },
   active: {
     y: () => (matches(minWidth.sm) ? 50 : 0),
+    opacity: 1,
     transition: navItemTransition,
   },
-  inactive: { y: 0, transition: navItemTransition },
+  inactive: {
+    y: 0,
+    transition: navItemTransition,
+    opacity: 1,
+  },
 });
 const NavItem = styled(NavItemPosed)`
-  ${({ theme, pose }) => css`
+  ${({ theme }) => css`
     display: inline-block;
     font-weight: ${theme.font.weightDemiBold};
     font-size: 20px;

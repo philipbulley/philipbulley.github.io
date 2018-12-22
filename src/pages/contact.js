@@ -29,7 +29,7 @@ const ContactText = styled.div`
   color: ${({ theme }) => theme.color.two};
 
   ${query.md} {
-    grid-column: 10 / span 3;
+    grid-column: 9 / span 4;
   }
 `;
 

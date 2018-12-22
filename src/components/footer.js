@@ -18,7 +18,7 @@ export default Footer;
 
 const FooterStyled = styled.div`
   grid-column: span 12;
-  margin: 220px 0 0;
+  margin: 220px 0 20px;
 
   ${query.sm} {
     grid-column: 1 / span 12;
@@ -29,7 +29,7 @@ const CompanyText = styled.div`
   display: inline-block;
   font-size: 10px;
   color: ${({ theme }) => theme.color.two};
-  transform: rotate(-90deg);
+  //transform: rotate(-90deg);
   transform-origin: top left;
 `;
 

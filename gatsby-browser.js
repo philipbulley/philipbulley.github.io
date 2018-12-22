@@ -1,11 +1,4 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
 import React from 'react';
-import posed from 'react-pose';
 import Layout from './src/components/layout';
 import GlobalStyle from './src/shared/global-style';
 import theme, {
@@ -14,11 +7,6 @@ import theme, {
   themeYellowAccent,
 } from './src/shared/theme';
 import { ThemeProvider } from 'styled-components';
-
-const LayoutPosed = posed(Layout)({
-  enter: {},
-  exit: {},
-});
 
 const themeOverrides = {
   '/projects': themeBlueAccent,
@@ -41,9 +29,9 @@ export const replaceComponentRenderer = ({ props, ...other }) => {
       <ThemeProvider theme={themeOverride || theme}>
         <>
           <GlobalStyle />
-          <LayoutPosed pose={pathname} {...props}>
+          <Layout {...props}>
             {React.createElement(component, props)}
-          </LayoutPosed>
+          </Layout>
         </>
       </ThemeProvider>
     </div>

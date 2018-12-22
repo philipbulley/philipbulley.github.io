@@ -1,29 +1,49 @@
 import React from 'react';
 import styled from 'styled-components';
 import _Grid from '../shared/grid/grid';
+import posed from 'react-pose';
 
 const IndexPage = () => (
-  <Grid>
-    <Paragraph>
-      <Badge>Latest</Badge>
-      Tier 1 Investment Bank
-    </Paragraph>
+  <Container initialPose="init" pose="show">
+    <Grid>
+      <Paragraph>
+        <Badge>Latest</Badge>
+        Tier 1 Investment Bank
+      </Paragraph>
 
-    <Paragraph>Loves web app dev and user interface</Paragraph>
+      <Paragraph>Loves web app dev and user interface</Paragraph>
 
-    <Paragraph>
-      <a href="mailto:hello@pb.codes">hello@pb.codes</a>
-    </Paragraph>
-  </Grid>
+      <Paragraph>
+        <a href="mailto:hello@pb.codes">hello@pb.codes</a>
+      </Paragraph>
+    </Grid>
+  </Container>
 );
 
 export default IndexPage;
+
+const Container = posed.div({
+  init: {},
+  show: { staggerChildren: 500 },
+});
 
 const Grid = styled(_Grid)`
   margin-top: -100px;
 `;
 
-const Paragraph = styled.p`
+const ParagraphPosed = posed.p({
+  init: {
+    opacity: 0,
+    y: '-5px',
+  },
+  show: {
+    opacity: 1,
+    y: '0px',
+    transition: { delay: 1000, duration: 1000 }
+  },
+});
+
+const Paragraph = styled(ParagraphPosed)`
   font-size: 16px;
   color: ${({ theme }) => theme.color.two};
 

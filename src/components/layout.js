@@ -7,6 +7,7 @@ import Nav from './nav';
 import Bio from './bio';
 import GridGuide from '../shared/grid/guide';
 import Footer from './footer';
+import styled from 'styled-components';
 
 const Layout = ({ children, hostRef, location }) => (
   <StaticQuery
@@ -20,7 +21,7 @@ const Layout = ({ children, hostRef, location }) => (
       }
     `}
     render={data => (
-      <div ref={hostRef}>
+      <Container ref={hostRef}>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -36,10 +37,10 @@ const Layout = ({ children, hostRef, location }) => (
           <Bio />
           <GridGuide />
           <Nav currentPath={location.pathname} />
-          {children}
+          <Main>{children}</Main>
           <Footer />
         </>
-      </div>
+      </Container>
     )}
   />
 );
@@ -49,3 +50,17 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+const Container = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  > * {
+    flex: 0 1 auto;
+  }
+`;
+
+const Main = styled.div`
+  flex: 1 0 auto;
+`;

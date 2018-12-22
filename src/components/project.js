@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 
 const Project = styled.div`
   margin: 0 0 100px;
@@ -16,16 +18,36 @@ const Project = styled.div`
 `;
 export default Project;
 
-export const Heading = styled.h2`
+export const Heading = posed(styled.h2`
   font-size: 24px;
   font-weight: ${({ theme }) => theme.font.weightBold};
   margin: 0 0 30px;
-`;
+`)({
+  out: { opacity: 0, x: '-5px' },
+  in: { opacity: 1, x: '0px', transition: {duration: 1000} },
+});
 
-export const Paragraph = styled.p`
+export const Paragraph = posed(styled.p`
   margin: 0 0 30px;
-`;
+`)({
+  out: { opacity: 0 },
+  in: { opacity: 1 },
+});
 
-export const Date = styled.div`
+export const Date = posed(styled.div`
   margin: 0 0 12px;
-`;
+`)({
+  out: { opacity: 0 },
+  in: { opacity: 1 },
+});
+
+// export const List = posed.ul({
+//   out: {},
+//   in: { staggerChildren: 50 },
+// });
+export const List = ({ children, ...rest }) => <ul {...rest}>{children}</ul>;
+
+export const ListItem = posed.li({
+  out: { opacity: 0 },
+  in: { opacity: 1, transition: { duration: 500 } },
+});
