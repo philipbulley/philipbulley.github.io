@@ -25,8 +25,8 @@ const Layout = ({ children, hostRef, location, theme }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Freelance front-end web developer, Philip Bulley, London. TypeScript, JavaScript and React web development.' },
+            { name: 'keywords', content: 'Philip Bulley, web developer London, freelance web developer, React, Redux, RxJS, TypeScript, JavaScript' },
             { name: 'theme-color', content: theme.color.accent },
           ]}
         >
