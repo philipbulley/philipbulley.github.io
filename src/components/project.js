@@ -18,14 +18,11 @@ const Project = styled.div`
 `;
 export default Project;
 
-export const Heading = posed(styled.h2`
+export const Heading = styled.h2`
   font-size: 24px;
   font-weight: ${({ theme }) => theme.font.weightBold};
   margin: 0 0 30px;
-`)({
-  out: { opacity: 0, x: '-5px' },
-  in: { opacity: 1, x: '0px', transition: {duration: 1000} },
-});
+`;
 
 export const Paragraph = posed(styled.p`
   margin: 0 0 30px;
@@ -38,7 +35,7 @@ export const Date = posed(styled.div`
   margin: 0 0 12px;
 `)({
   out: { opacity: 0 },
-  in: { opacity: 1 },
+  in: { opacity: 1, transition: { delay: 100 }  },
 });
 
 // export const List = posed.ul({

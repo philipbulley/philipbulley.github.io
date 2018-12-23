@@ -2,10 +2,11 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Grid from '../shared/grid/grid';
 import query from '../shared/media';
+import posed from 'react-pose';
 
 const Contact = () => (
   <Grid>
-    <ContactText>
+    <ContactText initialPose="init" pose="show">
       Please say
       <Anchor big href="mailto:hello@pb.codes">
         hello@pb.codes
@@ -23,7 +24,7 @@ const Contact = () => (
 
 export default Contact;
 
-const ContactText = styled.div`
+const ContactText = posed(styled.div`
   text-align: right;
   grid-column: span 12;
   color: ${({ theme }) => theme.color.two};
@@ -31,9 +32,12 @@ const ContactText = styled.div`
   ${query.md} {
     grid-column: 9 / span 4;
   }
-`;
+`)({
+  init: {},
+  show: { staggerChildren: 100 },
+});
 
-const Anchor = styled.a`
+const Anchor = posed(styled.a`
   display: block;
   font-weight: ${({ theme }) => theme.font.weightDemiBold};
   color: ${({ theme }) => theme.color.accent};
@@ -47,4 +51,7 @@ const Anchor = styled.a`
       margin: 0 0 60px 0;
       font-weight: ${({ theme }) => theme.font.weightBold};
     `};
-`;
+`)({
+  init: { opacity: 0 },
+  show: { opacity: 1 },
+});

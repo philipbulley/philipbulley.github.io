@@ -17,8 +17,8 @@ const Footer = () => (
 export default Footer;
 
 const FooterStyled = styled.div`
-  grid-column: span 12;
   margin: 220px 0 20px;
+  grid-column: span 12;
 
   ${query.sm} {
     grid-column: 1 / span 12;

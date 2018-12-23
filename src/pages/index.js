@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import _Grid from '../shared/grid/grid';
+import Grid from '../shared/grid/grid';
 import posed from 'react-pose';
+import query from '../shared/media';
 
 const IndexPage = () => (
   <Container initialPose="init" pose="show">
@@ -22,14 +23,17 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-const Container = posed.div({
+const Container = posed(styled.div`
+  display: none;
+  margin-top: -100px;
+
+  ${query.sm} {
+    display: block;
+  }
+`)({
   init: {},
   show: { staggerChildren: 500 },
 });
-
-const Grid = styled(_Grid)`
-  margin-top: -100px;
-`;
 
 const ParagraphPosed = posed.p({
   init: {
@@ -39,7 +43,7 @@ const ParagraphPosed = posed.p({
   show: {
     opacity: 1,
     y: '0px',
-    transition: { delay: 1000, duration: 1000 }
+    transition: { delay: 1000, duration: 1000 },
   },
 });
 

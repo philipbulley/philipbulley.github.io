@@ -7,7 +7,6 @@ const Grid = styled.div`
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
     height: 100%;
-    margin: 0 auto;
     padding: 0 30px;
     ${debug &&
       css`
@@ -15,6 +14,7 @@ const Grid = styled.div`
       `};
 
     ${query.sm} {
+      margin: 0 auto;
       width: ${breakpoint.sm}px;
       padding: 0 50px;
       ${debug &&
