@@ -48,6 +48,7 @@ const ParagraphPosed = posed.p({
 });
 
 const Paragraph = styled(ParagraphPosed)`
+  opacity: 0;
   font-size: 16px;
   color: ${({ theme }) => theme.color.two};
 
