@@ -4,4 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+// export { default as wrapPageElement } from './wrap-page-element' causes gatsby build to fail?!?!
+import _wrapPageElement from './wrap-page-element';
+export const wrapPageElement = _wrapPageElement;
