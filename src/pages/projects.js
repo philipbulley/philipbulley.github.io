@@ -20,8 +20,9 @@ const Projects = () => (
         <Paragraph>
           A lead role at a Tier 1 investment bank (based on-site, Fleet Street),
           working within the Investment Research division on their headline
-          research site. Working closely with teams in Singapore and New York to
-          create data-heavy apps using React, Redux and ag-Grid.
+          research site. Working closely with teams in Singapore and New York,
+          delivering UI components to internal business users, facilitating the
+          creation of data-heavy apps using React, Redux and ag-Grid.
         </Paragraph>
         <Paragraph>
           The creation of a domain specific language and development of a custom
