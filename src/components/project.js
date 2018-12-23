@@ -35,7 +35,7 @@ export const Date = posed(styled.div`
   margin: 0 0 12px;
 `)({
   out: { opacity: 0 },
-  in: { opacity: 1, transition: { delay: 100 }  },
+  in: { opacity: 1, transition: { delay: 100 } },
 });
 
 // export const List = posed.ul({

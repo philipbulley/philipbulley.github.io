@@ -28,7 +28,6 @@ class ViewportPose extends PureComponent {
 
   handleIntersection = (entries, observer) => {
     const { isIntersecting } = entries[0];
-    console.log({ isIntersecting, entries, observer });
 
     this.setState({ isIntersecting });
   };
@@ -39,7 +38,6 @@ class ViewportPose extends PureComponent {
 
     return (
       <Container ref={this.handleRef} pose={isIntersecting ? 'in' : 'out'}>
-        {isIntersecting}
         {children}
       </Container>
     );

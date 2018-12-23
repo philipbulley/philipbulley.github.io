@@ -20,8 +20,6 @@ const HeaderStyled = styled.div`
   color: white;
   background-color: ${({ theme }) => theme.color.accent};
   font-weight: ${({ theme }) => theme.font.weightBold};
-
-  transition: background-color 0.1s ease-out 0.5s;
 `;
 
 const StyledLink = styled(Link)`

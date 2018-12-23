@@ -40,6 +40,11 @@ const About = () => (
 
 export default About;
 
+const Container = posed.div({
+  init: {},
+  show: { staggerChildren: 300 },
+});
+
 const SubHeading = posed(styled.h2`
   grid-column: span 12;
   font-size: 24px;
@@ -73,10 +78,8 @@ const AboutText = styled.div`
 
 const Paragraph = posed.p({
   init: { opacity: 0 },
-  show: { opacity: 1, transition: { delay: 100, duration: 1000, ease: 'linear' } },
-});
-
-const Container = posed.p({
-  init: {},
-  show: { staggerChildren: 300 },
+  show: {
+    opacity: 1,
+    transition: { delay: 100, duration: 1000, ease: 'linear' },
+  },
 });

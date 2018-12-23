@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'pb.codes',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -17,11 +17,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'pb.codes — London-based freelance front-end developer',
+        short_name: 'pb.codes',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#000',
+        // theme_color: '#000',
         display: 'minimal-ui',
         // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },

@@ -7,9 +7,9 @@ import Nav from './nav';
 import Bio from './bio';
 import GridGuide from '../shared/grid/guide';
 import Footer from './footer';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 
-const Layout = ({ children, hostRef, location }) => (
+const Layout = ({ children, hostRef, location, theme }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,6 +27,7 @@ const Layout = ({ children, hostRef, location }) => (
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
+            { name: 'theme-color', content: theme.color.accent },
           ]}
         >
           <html lang="en" />
@@ -49,7 +50,7 @@ Layout.propTypes = {
   children: PropTypes.node,
 };
 
-export default Layout;
+export default withTheme(Layout);
 
 const Container = styled.div`
   min-height: 100vh;
