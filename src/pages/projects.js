@@ -31,8 +31,9 @@ const Projects = () => (
           and guidance to fellow developers.
         </Paragraph>
         <List>
+          <ListItem>React / Redux / Styled Components</ListItem>
+          <ListItem>Storybook</ListItem>
           <ListItem>Data-heavy apps</ListItem>
-          <ListItem>React / Redux</ListItem>
           <ListItem>ag-Grid</ListItem>
           <ListItem>AEM integration</ListItem>
           <ListItem>
@@ -51,15 +52,13 @@ const Projects = () => (
           TypeScript, RxJS, Angular 4 and Redux. Additional responsibilities
           include working directly with clients to specify technical solutions;
           providing mentorship and guidance to fellow developers as necessary;
-          development of cross-project in-house tooling. Basis: Contract.
+          development of cross-project in-house tooling.
         </Paragraph>
         <List>
-          <ListItem>Angular 4</ListItem>
+          <ListItem>Angular 4 / TypeScript / RxJS / Redux</ListItem>
           <ListItem>Real-time data</ListItem>
           <ListItem>Web Sockets</ListItem>
           <ListItem>Apache Cordova</ListItem>
-          <ListItem>Redux</ListItem>
-          <ListItem>RxJS</ListItem>
           <ListItem>
             Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
           </ListItem>
@@ -69,7 +68,7 @@ const Projects = () => (
 
     <Project>
       <ViewportPose>
-        <Date>April 2017 - 5 months</Date>
+        <Date>April 2016 - 5 months</Date>
         <Heading>Standard Chartered — Regtech CRM Tool</Heading>
         <Paragraph>
           Senior developer on a custom CRM tool for Standard Chartered.
@@ -91,9 +90,9 @@ const Projects = () => (
         <Heading>Responsive.TV — Video platform SaaS</Heading>
         <Paragraph>
           Technical Lead and creative technologist on ResponsiveTV. An
-          innovative video publishing SaaS comprising an interactive video player
-          (vanilla TypeScript) and publishing suite including an entirely custom
-          Adobe Premiere-like video editor app (Angular.js and d3).
+          innovative video publishing SaaS comprising an interactive video
+          player (vanilla TypeScript) and publishing suite including an entirely
+          custom Adobe Premiere-like video editor app (Angular.js and d3).
         </Paragraph>
         <Paragraph>
           A highlight was successfully pitching to{' '}
@@ -105,7 +104,8 @@ const Projects = () => (
         <List>
           <ListItem>TypeScript (consumer front-end)</ListItem>
           <ListItem>Angular.js / d3 (custom CMS)</ListItem>
-          <ListItem>Node</ListItem>
+          <ListItem>Node / Express</ListItem>
+          <ListItem>FFMPEG / MPEG-DASH</ListItem>
           <ListItem>
             Contract via <a href="https://www.stinkstudios.com">StinkStudios</a>
           </ListItem>
