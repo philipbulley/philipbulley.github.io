@@ -7,7 +7,7 @@ const Footer = () => (
   <Grid>
     <FooterStyled>
       <CompanyText>
-        <Copyright>© MMXVII pb.codes</Copyright>a trading name of milkisevil
+        <Copyright>© MMXVIII pb.codes</Copyright>a trading name of milkisevil
         ltd.
       </CompanyText>
     </FooterStyled>
