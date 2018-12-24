@@ -13,7 +13,7 @@ const About = () => (
         <Paragraph>
           With 19 years of industry experience, I've developed a keen eye for
           visual design and an intuitive approach to application architecture. I
-          apply well known software development patterns whilst being an
+          apply well-known software development patterns whilst being an
           advocate of KISS, DRY and YAGNI principles.
         </Paragraph>
 

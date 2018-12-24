@@ -55,11 +55,11 @@ const Projects = () => (
         </Paragraph>
         <List>
           <ListItem>Angular 4</ListItem>
-          <ListItem>Real time data</ListItem>
+          <ListItem>Real-time data</ListItem>
           <ListItem>Web Sockets</ListItem>
           <ListItem>Apache Cordova</ListItem>
           <ListItem>Redux</ListItem>
-          <ListItem>rxjs</ListItem>
+          <ListItem>RxJS</ListItem>
           <ListItem>
             Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
           </ListItem>
@@ -91,12 +91,12 @@ const Projects = () => (
         <Heading>Responsive.TV — Video platform SaaS</Heading>
         <Paragraph>
           Technical Lead and creative technologist on ResponsiveTV. An
-          innovative video publishing SaaS comprising interactive video player
+          innovative video publishing SaaS comprising an interactive video player
           (vanilla TypeScript) and publishing suite including an entirely custom
           Adobe Premiere-like video editor app (Angular.js and d3).
         </Paragraph>
         <Paragraph>
-          A highlight was successfully pitchng to{' '}
+          A highlight was successfully pitching to{' '}
           <a href="https://www.adweek.com/digital/bloombergs-new-publishing-platform-tinder-video-164340/">
             Bloomberg Media
           </a>{' '}
@@ -115,11 +115,11 @@ const Projects = () => (
 
     <Project>
       <ViewportPose>
-        <Date>Setpember 1999 - 14 years</Date>
+        <Date>September 1999 - 14 years</Date>
         <Heading>Once upon a time...</Heading>
 
         <Paragraph>
-          ...I previously worked in London and Dubai on award winning projects
+          ...I previously worked in London and Dubai on award-winning projects
           for brands including <a href="https://vimeo.com/80782045">Google</a>,
           Pepsi, <a href="https://vimeo.com/47368678">Philips</a>,{' '}
           <a href="https://vimeo.com/68389271">Shell</a>, Ford,{' '}
@@ -141,7 +141,7 @@ const Projects = () => (
           </a>{' '}
           that{' '}
           <a href="https://www.youtube.com/watch?v=yLUrkPeLUYQ">tubecast.tv</a>{' '}
-          — a personal ‘bedrooom-learning’ project of mine — was an actual
+          — a personal ‘bedroom-learning’ project of mine — was an actual
           start-up (?!).
         </Paragraph>
 
