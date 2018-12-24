@@ -104,8 +104,8 @@ const UnderlinePosed = posed.div({
   inactive: { width: 0, transition: { ...underlineTransition, duration: 0 } },
 });
 const Underline = styled(UnderlinePosed)`
+  width: 0;
   margin-top: 3px;
-  width: 100%;
   height: 4px;
   background-color: ${({ theme }) => theme.color.accent};
 `;
