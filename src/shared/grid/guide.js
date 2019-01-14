@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import Grid from './grid';
+import _Grid from './grid';
 
 class GridGuide extends PureComponent {
   state = {
@@ -58,6 +58,10 @@ const Container = styled.div`
   top: 0;
   z-index: 100;
   opacity: ${({ opacity }) => opacity};
+`;
+
+const Grid = styled(_Grid)`
+  height: 100%;
 `;
 
 const Content = styled.div`
