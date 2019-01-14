@@ -5,17 +5,30 @@ class ViewportPose extends PureComponent {
   state = { isIntersecting: false };
   observer = null;
   containerRef = null;
+  hasIntersectionObserver = typeof window.IntersectionObserver !== 'undefined';
 
   componentDidMount() {
+    if (!this.hasIntersectionObserver) {
+      return;
+    }
+
     this.observer = new IntersectionObserver(this.handleIntersection);
     this.observe();
   }
 
   componentWillUnmount() {
+    if (!this.hasIntersectionObserver) {
+      return;
+    }
+
     this.observer.disconnect();
   }
 
   handleRef = el => {
+    if (!this.hasIntersectionObserver) {
+      return;
+    }
+
     this.containerRef = el;
     this.observe();
   };
@@ -33,11 +46,16 @@ class ViewportPose extends PureComponent {
   };
 
   render() {
+    const { hasIntersectionObserver } = this;
     const { children } = this.props;
     const { isIntersecting } = this.state;
 
     return (
-      <Container ref={this.handleRef} pose={isIntersecting ? 'in' : 'out'}>
+      <Container
+        ref={this.handleRef}
+        initialPose="out"
+        pose={!hasIntersectionObserver || isIntersecting ? 'in' : 'out'}
+      >
         {children}
       </Container>
     );
