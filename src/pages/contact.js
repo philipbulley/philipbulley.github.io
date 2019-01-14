@@ -14,7 +14,7 @@ const Contact = () => (
       or find me on
       <Anchor href="https://www.linkedin.com/in/philipbulley">LinkedIn</Anchor>
       <Anchor href="https://twitter.com/milkisevil">Twitter</Anchor>
-      <Anchor href="https://github.com/philipbulley">Github</Anchor>
+      <Anchor href="https://github.com/philipbulley">GitHub</Anchor>
       <Anchor href="https://stackoverflow.com/users/619602/philip-bulley">
         Stack Overflow
       </Anchor>
