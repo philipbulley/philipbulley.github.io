@@ -38,10 +38,6 @@ export const Date = posed(styled.div`
   in: { opacity: 1, transition: { delay: 100 } },
 });
 
-// export const List = posed.ul({
-//   out: {},
-//   in: { staggerChildren: 50 },
-// });
 export const List = ({ children, ...rest }) => <ul {...rest}>{children}</ul>;
 
 export const ListItem = posed.li({
