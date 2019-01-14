@@ -5,7 +5,9 @@ class ViewportPose extends PureComponent {
   state = { isIntersecting: false };
   observer = null;
   containerRef = null;
-  hasIntersectionObserver = typeof window.IntersectionObserver !== 'undefined';
+  hasIntersectionObserver =
+    typeof window !== 'undefined' &&
+    typeof window.IntersectionObserver !== 'undefined';
 
   componentDidMount() {
     if (!this.hasIntersectionObserver) {
