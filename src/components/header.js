@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Grid from '../shared/grid/grid';
+import _Grid from '../shared/grid/grid';
 import { Link } from 'gatsby';
 
 const Header = () => (
@@ -20,6 +20,10 @@ const HeaderStyled = styled.div`
   color: white;
   background-color: ${({ theme }) => theme.color.accent};
   font-weight: ${({ theme }) => theme.font.weightBold};
+`;
+
+const Grid = styled(_Grid)`
+  height: 100%;
 `;
 
 const StyledLink = styled(Link)`

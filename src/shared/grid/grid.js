@@ -6,7 +6,6 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    height: 100%;
     padding: 0 30px;
     ${debug &&
       css`
