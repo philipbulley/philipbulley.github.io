@@ -15,7 +15,54 @@ const Projects = () => (
   <Grid>
     <Project>
       <ViewportPose>
-        <Date>June 2017 - 1 year 6 months+</Date>
+        <Date>Jan 2019 - present</Date>
+        <Heading>HSBC — Financial Management Web App</Heading>
+        <Paragraph>
+          Lead developer at HSBC (based on-site, Blue Fin) building a greenfield
+          financial management and reporting web application.
+        </Paragraph>
+        <Paragraph>
+          <strong>Responsibilities and highlights:</strong>
+          <List>
+            <ListItem>
+              Architecture and development on the front-end as well as a
+              server-side middle tier.
+            </ListItem>
+            <ListItem>
+              Driving creation of GraphQL schema alongside backend developers.
+            </ListItem>
+            <ListItem>Fragment-based query co-location</ListItem>
+            <ListItem>
+              Type safety across every tier (via code generation)
+            </ListItem>
+          </List>
+        </Paragraph>
+        <Paragraph>
+          <strong>Technologies used:</strong>
+          <List>
+            <ListItem>
+              React / TypeScript / GraphQL (Apollo Client) / Styled Components
+            </ListItem>
+            <ListItem>
+              Node.js / GraphQL Schema Stitching + Delegation (Apollo Server)
+            </ListItem>
+            <ListItem>
+              Pivotal Cloud Foundry / Micro service architecture
+            </ListItem>
+            <ListItem>Storybook</ListItem>
+            <ListItem>ag-Grid</ListItem>
+            <ListItem>Victory Charts</ListItem>
+          </List>
+        </Paragraph>
+        <Paragraph>
+          Contract via <a href="http://www.somoglobal.com">Somo</a>
+        </Paragraph>
+      </ViewportPose>
+    </Project>
+
+    <Project>
+      <ViewportPose>
+        <Date>June 2017 - 1 year 7 months</Date>
         <Heading>Tier 1 Investment Bank — Research Web Apps</Heading>
         <Paragraph>
           A lead role at a Tier 1 investment bank (based on-site, Fleet Street),
@@ -36,10 +83,10 @@ const Projects = () => (
           <ListItem>Data-heavy apps</ListItem>
           <ListItem>ag-Grid</ListItem>
           <ListItem>AEM integration</ListItem>
-          <ListItem>
-            Contract via <a href="http://www.somoglobal.com">Somo</a>
-          </ListItem>
         </List>
+        <Paragraph>
+          Contract via <a href="http://www.somoglobal.com">Somo</a>
+        </Paragraph>
       </ViewportPose>
     </Project>
 
@@ -59,10 +106,10 @@ const Projects = () => (
           <ListItem>Real-time data</ListItem>
           <ListItem>Web Sockets</ListItem>
           <ListItem>Apache Cordova</ListItem>
-          <ListItem>
-            Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
-          </ListItem>
         </List>
+        <Paragraph>
+          Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
+        </Paragraph>
       </ViewportPose>
     </Project>
 
@@ -77,10 +124,10 @@ const Projects = () => (
           <ListItem>Angular.js 1.5</ListItem>
           <ListItem>Node</ListItem>
           <ListItem>Parse DB</ListItem>
-          <ListItem>
-            Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
-          </ListItem>
         </List>
+        <Paragraph>
+          Contract via <a href="http://www.fathomlondon.com">Fathom London</a>
+        </Paragraph>
       </ViewportPose>
     </Project>
 
@@ -106,10 +153,10 @@ const Projects = () => (
           <ListItem>Angular.js / d3 (custom CMS)</ListItem>
           <ListItem>Node / Express</ListItem>
           <ListItem>FFMPEG / MPEG-DASH</ListItem>
-          <ListItem>
-            Contract via <a href="https://www.stinkstudios.com">StinkStudios</a>
-          </ListItem>
         </List>
+        <Paragraph>
+          Contract via <a href="https://www.stinkstudios.com">StinkStudios</a>
+        </Paragraph>
       </ViewportPose>
     </Project>
 

@@ -9,8 +9,8 @@ const Bio = () => (
     <Grid>
       <BioText>
         <strong>I'm Philip Bulley.</strong> An experienced London-based
-        freelance front-end developer specialising in web application
-        development. Loves TypeScript, JavaScript & React.
+        freelance front-end developer specialising in web app development. Loves
+        TypeScript, JavaScript, React & GraphQL.
       </BioText>
     </Grid>
   </BioStyled>
