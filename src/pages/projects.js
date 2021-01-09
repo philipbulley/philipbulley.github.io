@@ -15,7 +15,42 @@ const Projects = () => (
   <Grid>
     <Project>
       <ViewportPose>
-        <Date>Jan 2019 - present</Date>
+        <Date>March 2020 - present</Date>
+        <Heading>NatWest — Mettle</Heading>
+        <Paragraph>
+          Mettle is the free business account by NatWest that helps small
+          businesses start, run and grow. I'm working as a senior developer
+          within the mobile team using React Native, TypeScript and GraphQL to
+          develop the core mobile banking app.
+        </Paragraph>
+        <List>
+          <ListItem>React Native</ListItem>
+          <ListItem>TypeScript</ListItem>
+          <ListItem>GraphQL (Apollo Client and Server)</ListItem>
+        </List>
+        <Paragraph>You can find Mettle on:</Paragraph>
+        <List>
+          <ListItem>
+            <a href="https://apps.apple.com/gb/app/mettle-business-account/id1411976870">
+              App Store (iOS)
+            </a>
+          </ListItem>
+          <ListItem>
+            <a href="https://play.google.com/store/apps/details?id=uk.co.mettle.app">
+              Google Play (Android)
+            </a>
+          </ListItem>
+          <ListItem>
+            <a href="https://mettle.co.uk">Web</a>
+          </ListItem>
+        </List>
+        <Paragraph>Basis: Full time</Paragraph>
+      </ViewportPose>
+    </Project>
+
+    <Project>
+      <ViewportPose>
+        <Date>January 2019 - 1 year 1 month</Date>
         <Heading>HSBC — Financial Management Web App</Heading>
         <Paragraph>
           Lead developer at HSBC (based on-site, Blue Fin) building a greenfield
