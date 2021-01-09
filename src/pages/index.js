@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Grid>
       <Paragraph>
         <Badge>Latest</Badge>
-        HSBC
+        NatWest — Mettle
       </Paragraph>
 
       <Paragraph>Loves web app dev and user interface</Paragraph>
