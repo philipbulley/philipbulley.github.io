@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Grid from '../shared/grid/grid';
 import query from '../shared/media';
+import romanize from 'romanize';
+
+const year = romanize(new Date().getFullYear());
 
 const Footer = () => (
   <Grid>
     <FooterStyled>
       <CompanyText>
-        <Copyright>© MMXIX pb.codes</Copyright>a trading name of milkisevil ltd.
+        <Copyright>© {year} pb.codes</Copyright>
       </CompanyText>
     </FooterStyled>
   </Grid>
@@ -28,7 +31,6 @@ const CompanyText = styled.div`
   display: inline-block;
   font-size: 10px;
   color: ${({ theme }) => theme.color.two};
-  //transform: rotate(-90deg);
   transform-origin: top left;
 `;
 
